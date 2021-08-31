@@ -19,11 +19,12 @@ Users should be able to:
 ### Screenshot
 
 [Preview Desktop](./result-screenshots/preview-desktop.png)
+
 [Preview Mobile](./result-screenshots/preview-mobile.png)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Solution URL: [Github](https://github.com/rizky-pm/fm_order-summary-component)
 
 ### Built with
 
