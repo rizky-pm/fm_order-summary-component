@@ -1,0 +1,9 @@
+body {
+    background: url(../images/pattern-background-desktop.svg);
+    background-color: $colorPaleBlue;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

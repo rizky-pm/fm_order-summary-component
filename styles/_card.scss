@@ -1,0 +1,147 @@
+.card {
+    background-color: $colorVeryPaleBlue;
+    overflow: hidden;
+    height: 34.375rem;
+    width: 25rem;
+    border-radius: 1.25rem;
+    @include box-shadow(
+        0.125rem,
+        2.25rem,
+        2.4375rem,
+        -1.125rem,
+        rgba(0, 0, 0, 0.31)
+    );
+
+    @include media-query(phone) {
+        width: 20.625rem;
+    }
+
+    &__hero {
+        background: url(../images/illustration-hero.svg);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        height: 12.5rem;
+
+        @include media-query(phone) {
+            // align-self: center;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.9375rem 3.125rem;
+
+        &__title {
+            color: $colorDarkBlue;
+            font-size: 1.5rem;
+            font-weight: 900;
+            padding: 0.9375rem 0;
+        }
+
+        &__desc {
+            color: $colorDesaturatedBlue;
+            line-height: 1.75;
+            font-size: 0.875rem;
+            text-align: center;
+        }
+
+        &__detail {
+            background-color: $colorVeryPaleBlue;
+            display: grid;
+            grid-template-areas:
+                'icon plan change'
+                'icon price change';
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            margin-top: 0.625rem;
+            border-radius: 0.625rem;
+            width: 18.75rem;
+            height: 5.625rem;
+            padding: 1.25rem 1.25rem;
+
+            &__icon {
+                grid-area: icon;
+                background: url(../images/icon-music.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+
+            &__plan {
+                grid-area: plan;
+                color: $colorDarkBlue;
+                font-size: 0.9375rem;
+                font-weight: 900;
+            }
+
+            &__price {
+                grid-area: price;
+                color: $colorDesaturatedBlue;
+                font-size: 0.8125rem;
+            }
+
+            &__change {
+                grid-area: change;
+                color: $colorBrightBlue;
+                justify-self: flex-end;
+                font-weight: 700;
+                font-size: 0.75rem;
+
+                a {
+                    color: $colorBrightBlue;
+                    transition: opacity ease 0.1s;
+
+                    &:active {
+                        opacity: 0.7;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &__button {
+            background-color: $colorBrightBlue;
+            color: $colorVeryPaleBlue;
+            font-family: 'Red Hat Display', sans-serif;
+            @include box-shadow(
+                0rem,
+                0.5625rem,
+                2.75rem,
+                -0.9375rem,
+                rgba(0, 0, 0, 0.85)
+            );
+            outline: none;
+            border: none;
+            font-weight: 700;
+            border-radius: 0.625rem;
+            width: 18.75rem;
+            height: 2.5rem;
+            transition: all ease 0.1s;
+
+            &:active {
+                background-color: $colorBrightBlue;
+                opacity: 0.75;
+            }
+        }
+
+        &__cancel {
+            color: $colorDarkBlue;
+            opacity: 0.75;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 0.75rem;
+            margin-top: 1.25rem;
+            transition: opacity ease 0.1s;
+
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+}

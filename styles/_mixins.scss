@@ -1,0 +1,43 @@
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color) {
+    box-shadow: $horizontal $vertical $blur $spread $color;
+    -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+    -moz-box-shadow: $horizontal $vertical $blur $spread $color;
+    -ms-box-shadow: $horizontal $vertical $blur $spread $color;
+}
+
+@mixin media-query($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5rem) {
+            // 600px
+            @content;
+        }
+    }
+
+    @if $breakpoint == tablet {
+        @media only screen and (min-width: 37.5625rem) {
+            // 601px
+            @content;
+        }
+    }
+
+    @if $breakpoint == landscapetablet {
+        @media only screen and (min-width: 48rem) {
+            // 768px
+            @content;
+        }
+    }
+
+    @if $breakpoint == laptop {
+        @media only screen and (min-width: 62rem) {
+            //992px
+            @content;
+        }
+    }
+
+    @if $breakpoint == largedevice {
+        @media only screen and (min-width: 75rem) {
+            //1200px
+            @content;
+        }
+    }
+}

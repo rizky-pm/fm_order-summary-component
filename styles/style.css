@@ -1,0 +1,200 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background: url(../images/pattern-background-desktop.svg);
+  background-color: #e0e8ff;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #f5f7ff;
+  overflow: hidden;
+  height: 34.375rem;
+  width: 25rem;
+  border-radius: 1.25rem;
+  box-shadow: 0.125rem 2.25rem 2.4375rem -1.125rem rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0.125rem 2.25rem 2.4375rem -1.125rem rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0.125rem 2.25rem 2.4375rem -1.125rem rgba(0, 0, 0, 0.31);
+  -ms-box-shadow: 0.125rem 2.25rem 2.4375rem -1.125rem rgba(0, 0, 0, 0.31);
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .card {
+    width: 20.625rem;
+  }
+}
+
+.card__hero {
+  background: url(../images/illustration-hero.svg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  height: 12.5rem;
+}
+
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.9375rem 3.125rem;
+}
+
+.card__content__title {
+  color: #1f2f56;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 0.9375rem 0;
+}
+
+.card__content__desc {
+  color: #7280a7;
+  line-height: 1.75;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.card__content__detail {
+  background-color: #f5f7ff;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'icon plan change' 'icon price change';
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.625rem;
+  border-radius: 0.625rem;
+  width: 18.75rem;
+  height: 5.625rem;
+  padding: 1.25rem 1.25rem;
+}
+
+.card__content__detail__icon {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: icon;
+  background: url(../images/icon-music.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.card__content__detail__plan {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: plan;
+  color: #1f2f56;
+  font-size: 0.9375rem;
+  font-weight: 900;
+}
+
+.card__content__detail__price {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: price;
+  color: #7280a7;
+  font-size: 0.8125rem;
+}
+
+.card__content__detail__change {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: change;
+  color: #3829e0;
+  justify-self: flex-end;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.card__content__detail__change a {
+  color: #3829e0;
+  -webkit-transition: opacity ease 0.1s;
+  transition: opacity ease 0.1s;
+}
+
+.card__content__detail__change a:active {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.card__content__button {
+  background-color: #3829e0;
+  color: #f5f7ff;
+  font-family: 'Red Hat Display', sans-serif;
+  box-shadow: 0rem 0.5625rem 2.75rem -0.9375rem rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 0rem 0.5625rem 2.75rem -0.9375rem rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 0rem 0.5625rem 2.75rem -0.9375rem rgba(0, 0, 0, 0.85);
+  -ms-box-shadow: 0rem 0.5625rem 2.75rem -0.9375rem rgba(0, 0, 0, 0.85);
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.625rem;
+  width: 18.75rem;
+  height: 2.5rem;
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+}
+
+.card__content__button:active {
+  background-color: #3829e0;
+  opacity: 0.75;
+}
+
+.card__content__cancel {
+  color: #1f2f56;
+  opacity: 0.75;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.75rem;
+  margin-top: 1.25rem;
+  -webkit-transition: opacity ease 0.1s;
+  transition: opacity ease 0.1s;
+}
+
+.card__content__cancel:active {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
