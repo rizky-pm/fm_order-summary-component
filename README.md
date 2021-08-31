@@ -1,4 +1,4 @@
-## Table of contents
+# Table of contents
 
 -   [Overview](#overview)
 -   [The challenge](#the-challenge)
@@ -7,8 +7,6 @@
 -   [Built with](#built-with)
 -   [Useful resources](#useful-resources)
 -   [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -23,11 +21,11 @@ Users should be able to:
 [Preview Desktop](./result-screenshots/preview-desktop.png)
 [Preview Mobile](./result-screenshots/preview-mobile.png)
 
-# Links
+### Links
 
 -   Solution URL: [Add solution URL here](https://your-solution-url.com)
 
-# Built with
+### Built with
 
 -   Naming Block Element Modifier (BEM)
 -   SCSS
@@ -35,11 +33,11 @@ Users should be able to:
 -   CSS Grid
 -   Desktop-first workflow
 
-# Useful resources
+### Useful resources
 
 -   [Resource 1](https://dev.to/heytulsiprasad/easy-to-write-media-queries-using-sass-mixins-1p2f) - Using @mixin to create media-query
 
-# Author
+### Author
 
 -   Frontend Mentor - [@rizky-pm](https://www.frontendmentor.io/profile/rizky-pm)
 -   Twitter - [@\_rizkypm](https://twitter.com/_rizkypm)
